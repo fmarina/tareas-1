@@ -1,39 +1,23 @@
-# MVC
+# Patrones de diseño.
 
-El patrón MVC nos propone separar el código de acuerdo a sus responsabilidades.
+## Descripción del proyecto
 
-Está compuesto por tres elementos:
+Vamos a realizar una aplicación para el seguimiento de nuestras tareas. Nuestra aplicación deberá poder:
+- Agregar nuevas tareas.
+- Establecer la prioridad de la tarea.
+- Marcar como realizadas una tarea.
+- Eliminar una tarea.
+- Editar el texto de una tarea.
 
-1. El modelo: que trabaja con los datos. No conoce cómo se ve la aplicación.
-2. El controlador: es el nexo entre los otros dos elementos. Es el que toma las decisiones.
-3. La vista: presenta la información al usuario, y éste interactúa con la vista.
+Tendremos 3 vistas:
+1. Index: que nos llevará a las dos vistas principales:
+2. Agregar tareas: tendrá un formulario para agregar la tarea, deberemos poder indicar el texto de la tarea, y la prioridad. Cuando agregemos una tarea se deberá mostrar en la lista de tareas de manera dinámica.
+3. Vista tareas, tendremos la lista de todas nuestras tareas, que podremos eliminar, editar, o marcar como realizadas.
 
-## Etapa 1.
+Para lograr nuestros objetivos deberemos hacer uso de dos patrones de diseño de Javascript:
+- Patrón *MVC*
 
-1. Forkeamos y descargamos el código.
-2. Creamos nuestra applicación MVC. Debemos crear un modelo, controlador y vista.
-3. El modelo deberá:
-    - Ser una función constructora.
-    - Tener como propiedades: un array de objetos con el siguiente formato: 
-    {id: 1, texto: 'Aprender MVC', completo: false}
-4. La vista deberá:
-    - Ser una función constructora.
-    - Tener como propiedades: 
-        - this.app: debe seleccionar el elemento del DOM de id root.
-        - this.form: debe crear un elemento html form
-        - this.input: debe crear un elemento html input
-        - this.input.type: 'text';
-        - this.input.placeholder: 'Agregar Tarea';
-        - this.input.name: 'tarea';
-        - this.botonEnviar: debe crear un elemento button.
-        - this.botonEnviar.textContent: debe ser igual a "agregar"
-        - debemos appendiar al formulario el input y el botonEnviar
-        - this.listaTareas: debe crear un elemento html tipo ul, con clase 'lista-tareas';
-        - se debe appendiar el formulario y la listaTareas a this.app.
-5. El controlador deberá:
-    - Ser una función constructora. Y debe recibir como parámetro el modelo y la vista.
-    - Tener como propiedades:
-        - this.modelo = al modelo;
-        - this.vista = a la vista;
-    - Al final del archivo del controlador.js se debe utilizar la siguiente función:
-    var app = new Controlador(new Modelo, new Vista);
+Recursos:
+
+1. Descargaremos los archivos html con la estructura mínima y el css. 
+2. Debemos realizar todo nuestro código en javascript.

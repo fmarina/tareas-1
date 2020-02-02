@@ -1,2 +1,0 @@
-// separación de responsabilidades.
-

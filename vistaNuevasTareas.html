@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+  <link rel="stylesheet" href="css/style.css">
+  <title>Nuevas Tareas | MVC</title>
+</head>
+<body>
+  <div class="main-content">
+    <div class="container">
+      <div class="fullwidth">
+        <h1>Cargar nuevas tareas</h1>
+        <form>
+          <div class="form_group">
+            <label for="row" class="block_label">Ingresa la tarea que deseas realizar:</label>
+            <input type="text" id="row" class="input_field" placeholder="Ingrese su nueva tarea aquí" />
+          </div>
+          <div class="form_group">
+            <input type="radio" id="alta" name="priority" value="alta"><label for="alta">Alta</label>
+            <input type="radio" id="media" name="priority" value="media"><label for="media">Media</label>
+            <input type="radio" id="baja" name="priority" value="baja"><label for="baja">Baja</label>
+          </div>
+          <div class="button-container">
+            <button id="row__button" class="button button-primary">Cargar nueva tarea</button>
+          </div>
+        </form>
+        <div class="container-tareas">
+          <h2>Lista de tareas</h2>
+          <ul class="lista-tareas">
+            <p>No hay tareas para mostrar todavía ¿Por qué no agregar una?</p>
+          </ul>
+        </div>
+        <div class="button-container">
+          <a class="button button-secondary" href="vistaTareas.html">Ir a ver tareas</a>
+          <a href="index.html" class="button button-secondary">
+            <span class="icon">Volver al inicio</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/evento.js"></script>
+  <script type="text/javascript" src="js/modelo/modelo.js"></script>
+  <script type="text/javascript" src="js/vistas/vistaNuevasTareas.js"></script>
+  <script type="text/javascript" src="js/vistas/vistaTareas.js"></script>
+  <script type="text/javascript" src="js/controlador/controlador.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
