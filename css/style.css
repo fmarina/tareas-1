@@ -23,6 +23,7 @@ a:hover {
   max-width: 960px;
   width: 100%;
   min-height: 100vh;  
+  margin: 0 auto;
 }
 .container {
   min-height: 100vh;
