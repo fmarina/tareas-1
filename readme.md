@@ -16,6 +16,7 @@ Tendremos 3 vistas:
 
 Para lograr nuestros objetivos deberemos hacer uso de dos patrones de diseño de Javascript:
 - Patrón *MVC*
+- Patrón *Observador*
 
 Recursos:
 
