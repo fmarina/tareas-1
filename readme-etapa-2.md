@@ -28,10 +28,10 @@ Vamos a crear el método agregarTareas en la VistaNuevasTareas, que provocará u
 
 1. Tenemos que escuchar el evento 'submit' del formulario. Recordar que cuando estemos trabajando en el evento se cambia el valor de this, por lo que tendremos que guardarlo en una variable.
 2. Debemos obtener el valor del input, y el valor del checkbox seleccionado, guardamos estos valores en dos variables.
-3. Una vez que tengamos los datos de la nueva tarea debemos avisarle al controlador que ha sucedido un cambio, ejecutar el método del controlador agregarTarea y pasarle los valores del texto de la tarea más la prioridad.
+3. Una vez que tengamos los datos de la nueva tarea debemos avisarle al controlador que ha sucedido un cambio, ejecutar el método del controlador agregarTarea y pasarle los valores del texto de la tarea más la prioridad. Si no existe este método tendremos que agregarlo.
 
 Esta parte es importante, pero ahora sí vamos a poder utilizar el patrón observador.
 
 - En el modelo: debe procesar la información que recibe del controlador, y agregarla a las tareas.
 - El modelo luego de agregar la tarea al array tareas debe notificar a todos los suscriptores.
-- Para poder notificar es necesario que el modelo posea una propiedad que cree una instancia del evento (el objeto evento);
+- Para poder notificar es necesario que el modelo posea una propiedad que cree una instancia del evento (el objeto evento).
