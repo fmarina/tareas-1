@@ -17,7 +17,9 @@ Además tiene 2 métodos:
 Siguiendo lo visto en clase tenemos:
 
 *vista => controlador => modelo*
+
 Pero ahora podemos adicionar:
+
 *modelo notifica a => todas las vistas*
 
 Los cambios que realicemos van a disparar un evento, que están escuchando las vistas.
