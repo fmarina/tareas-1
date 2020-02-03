@@ -12,18 +12,18 @@
     <div class="container">
       <div class="fullwidth">
         <h1>Cargar nuevas tareas</h1>
-        <form>
+        <form id="formulario-agregar">
           <div class="form_group">
-            <label for="row" class="block_label">Ingresa la tarea que deseas realizar:</label>
-            <input type="text" id="row" class="input_field" placeholder="Ingrese su nueva tarea aquí" />
+            <label for="descripcion" class="block_label">Ingresa la tarea que deseas realizar:</label>
+            <input type="text" id="descripcion" class="input_field" placeholder="Ingrese su nueva tarea aquí" />
           </div>
           <div class="form_group">
-            <input type="radio" id="alta" name="priority" value="alta"><label for="alta">Alta</label>
-            <input type="radio" id="media" name="priority" value="media"><label for="media">Media</label>
-            <input type="radio" id="baja" name="priority" value="baja"><label for="baja">Baja</label>
+            <input type="radio" id="alta" name="prioridad" value="alta"><label for="alta">Alta</label>
+            <input type="radio" id="media" name="prioridad" value="media"><label for="media">Media</label>
+            <input type="radio" id="baja" name="prioridad" value="baja"><label for="baja">Baja</label>
           </div>
           <div class="button-container">
-            <button id="row__button" class="button button-primary">Cargar nueva tarea</button>
+            <button id="boton-agregar" class="button button-primary">Cargar nueva tarea</button>
           </div>
         </form>
         <div class="container-tareas">
